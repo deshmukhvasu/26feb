@@ -1,0 +1,10 @@
+--- 
+ - name: want to update
+   apt:
+    update_cache: yes
+
+
+ - name: install the Java Development Kit
+   apt:
+    name: default-jdk
+    state: present 
