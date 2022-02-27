@@ -1,5 +1,5 @@
 ---
-- hosts: 26FEB
+- hosts: [webserver]
   become: yes
   roles:
    - {role: tomcat, when: ansible_os_family =="Debian"}
